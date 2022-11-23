@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		/*body{
+			background-size:500px;
+			background-repeat: no-repeat;
+		}*/
+
+		#elsa{
+			width:150px;
+			height:150px;
+			background-size:cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-image: url(play.png);
+		}
+	</style>
+</head>
+<body>
+		<audio id="song" src="song1.mp3"></audio>
+	<center><div id="elsa"></div></center>
+	
+
+	<script type="text/javascript">
+			var clicks = 0
+		document.addEventListener("click", 
+			function(){
+				clicks = clicks+1
+			console.log(clicks)
+
+			if (clicks %2 == 1) {
+				elsa.style.backgroundImage="url(images.png)";
+				song.play();
+				}
+			if (clicks %2 == 0) {
+				elsa.style.backgroundImage="url(play.png)";
+				song.pause();
+				}
+		})
+	</script>
+</body>
+</html>
