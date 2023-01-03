@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#box{
+			width: 1000px;
+			height: 1000px;
+			border:1px solid black;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<p>What shirt should you wear today? (click)</p>
+		<div id="box"></div></center>
+	<script type="text/javascript">
+		
+		var breakfast=["0.png","1.png","2.png","3.png","4.png", "5.png", "6.png"]
+box.addEventListener("click", function(){
+
+var randomNumber = Math.round(Math.random()*6);
+
+	box.style.backgroundImage = "url("+breakfast[
+		randomNumber]+")";
+	console.log(randomNumber)
+})
+
+	</script>
+</body>
+</html>
