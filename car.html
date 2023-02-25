@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		
+
+		#buggy{
+			width:560px;
+			height:710px;
+			background-image: url(broken.png);
+			left:10px;
+			position:absolute;
+		}
+		#image{
+			float: right;
+			width:300px;
+			height:300px;
+			background-color: white;
+			background-image:url(hospital.png);
+			background-repeat: no-repeat;
+			background-size:contain;
+
+		}
+	</style>
+</head>
+<body>
+	<h1>Oh no! Help me get to the hospital! I'm hurt! (click right arrow)</h1>
+	<div id="image"></div>
+	<div id="buggy"></div>
+
+	<script type="text/javascript">
+		buggy.style.left = "0px";
+
+		 var x = parseInt(buggy.style.left);
+
+		document.addEventListener("keydown", function(event){
+			console.log(x)
+			x = x+10;
+
+			buggy.style.left = x +"px";
+
+		})
+
+
+	</script>
+
+</body>
+</html>
